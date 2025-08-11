@@ -1,0 +1,1 @@
+Get-ChildItem | Where-Object { $_.Name -match '^\[电影天堂www\.dytt89\.com]' } | Rename-Item -NewName { $_.Name -replace '^\[电影天堂www\.dytt89\.com]', '' } -Force
